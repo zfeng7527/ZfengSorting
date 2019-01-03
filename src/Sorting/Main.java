@@ -14,7 +14,7 @@ public class Main {
 
 	System.out.print("After: ");
 	for(int num:testArr)
-	    System.out.println();
+	    System.out.print(num+" ");
 	System.out.println();
     }
 }
