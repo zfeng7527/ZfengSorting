@@ -7,14 +7,17 @@ public class Main {
 
 	System.out.print("Before: ");
 	for(int num:testArr)
-	    System.out.print(num+" ");
+		System.out.print(num+" ");
     System.out.println();
 
-	BubbleSort.bubbleSort(testArr);
+    long time = System.nanoTime();
+	util.bubbleSort(testArr);
+	time=System.nanoTime() - time;
 
 	System.out.print("After: ");
 	for(int num:testArr)
 	    System.out.print(num+" ");
 	System.out.println();
+	System.out.println("Time taken: "+time);
     }
 }
