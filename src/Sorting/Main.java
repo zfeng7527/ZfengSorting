@@ -3,7 +3,7 @@ package Sorting;
 public class Main {
 
     public static void main(String[] args) {
-	int[] testArr = {8,6,7,5,3,0,9,10,1,2,3};
+	int[] testArr = utility.randomIntArr(10);
 
 	System.out.print("Before: ");
 	for(int num:testArr)
@@ -11,7 +11,7 @@ public class Main {
     System.out.println();
 
     long time = System.nanoTime();
-	util.bubbleSort(testArr);
+	BubbleSort.bubbleSort(testArr);
 	time=System.nanoTime() - time;
 
 	System.out.print("After: ");
