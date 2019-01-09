@@ -25,4 +25,15 @@ public static int[] selectionSort(int[] arr){
         }
     return arr;
 }
+
+public static int[] insertionSort(int[] arr){
+        for(int i = 1;i<arr.length;i++){
+            for(int j = i;j>0;j--){
+                if(arr[j]<arr[j-1]){
+                    utility.swap(arr,j,j-1);
+                }
+            }
+        }
+        return arr;
+}
 }
