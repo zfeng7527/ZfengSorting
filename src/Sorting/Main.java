@@ -3,7 +3,7 @@ package Sorting;
 public class Main {
 
 	public static void main(String[] args) {
-		int[] testArr = utility.randomIntArr(10);
+		int[] testArr = utility.randomIntArr(200000);
 
 		System.out.print("Before: ");
 		for (int num : testArr)
