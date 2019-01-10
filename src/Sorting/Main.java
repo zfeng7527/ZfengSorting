@@ -3,7 +3,7 @@ package Sorting;
 public class Main {
 
 	public static void main(String[] args) {
-		int[] testArr = utility.randomIntArr(200000);
+		int[] testArr = utility.randomIntArr(100);
 
 		System.out.print("Before: ");
 		for (int num : testArr)
@@ -11,7 +11,7 @@ public class Main {
 		System.out.println();
 
 		long time = System.nanoTime();
-		Sorting.insertionSort(testArr);
+		RandomSort.RandomSort(testArr);
 		time = System.nanoTime() - time;
 
 		System.out.print("After: ");
