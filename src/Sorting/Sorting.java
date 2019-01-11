@@ -5,12 +5,22 @@ public class Sorting {
     public static int[] bubbleSort(int[] arr){
     for(int n=0; n < arr.length-1; n++){
         if (arr[n] > arr[n+1]) {
-            utility.swap(arr, n, n + 1);
+            utility.swapInt(arr, n, n + 1);
             n= -1;
         }
     }
     return arr;
 }
+
+    public static String[] bubbleSortS(String[] arr){
+        for(int n=0; n < arr.length-1; n++){
+            if (0 > arr[n+1].compareTo(arr[n])) {
+                utility.swapString(arr, n, n + 1);
+                n= -1;
+            }
+        }
+        return arr;
+    }
 
 public static int[] selectionSort(int[] arr){
         int lowest = 0;
@@ -21,7 +31,7 @@ public static int[] selectionSort(int[] arr){
                     lowest = i+j;
                 }
             }
-            utility.swap(arr,i,lowest);
+            utility.swapInt(arr,i,lowest);
         }
     return arr;
 }
@@ -30,7 +40,7 @@ public static void insertionSort(int[] arr){
         for(int i = 1;i<arr.length;i++){
             for(int j = i;j>0;j--){
                 if(arr[j]<arr[j-1]){
-                    utility.swap(arr,j,j-1);
+                    utility.swapInt(arr,j,j-1);
                 }
             }
         }

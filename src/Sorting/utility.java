@@ -2,10 +2,22 @@ package Sorting;
 
 public class utility {
 
-    public static void swap(int[] arr, int i, int j) {
+    public static void swapInt(int[] arr, int i, int j) {
             int temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
+    }
+
+    public static void swapString(String[] arr, int i, int j) {
+        String temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+
+    public static void swapChar(char[] arr, int i, int j) {
+        char temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 
     public static int[] randomIntArr(int count){
