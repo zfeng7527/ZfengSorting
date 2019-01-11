@@ -3,19 +3,19 @@ package Sorting;
 public class Main {
 
 	public static void main(String[] args) {
-		int[] testArr = utility.randomIntArr(100);
+		String[] testArr = utility.randomStringArr(10);
 
 		System.out.print("Before: ");
-		for (int num : testArr)
+		for (String num : testArr)
 			System.out.print(num + " ");
 		System.out.println();
 
 		long time = System.nanoTime();
-		RandomSort.RandomSort(testArr);
+		Sorting.bubbleSort(testArr);
 		time = System.nanoTime() - time;
 
 		System.out.print("After: ");
-		for (int num : testArr)
+		for (String num : testArr)
 			System.out.print(num + " ");
 		System.out.println();
 		System.out.println("Time taken: " + time);
