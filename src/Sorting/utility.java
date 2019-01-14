@@ -2,7 +2,7 @@ package Sorting;
 
 public class utility {
 
-    //Swapping Methods
+    //Swapping Functions
     public static void swap(int[] arr, int i, int j) {
             int temp = arr[i];
             arr[i] = arr[j];
@@ -30,12 +30,16 @@ for(int n=0;n<count-1;n++){
 return randomIntArr;
     }
 
-    public static String[] randomStringArr(int num,int length){
+    public static String[] randomStringArr(int num,int length) {
         String[] randomStringArr = new String[num];
-        for(int n=num;)
-        for(int n=0;n<length-1;n++){
-            randomStringArr[n]=(char)((Math.random()*26)+97);
+        for (int i = num-1; i >= 0; i--){
+            String s = "";
+        for (int n = 0; n < length; n++) {
+            char c = (char) ((Math.random() * 26) + 97);
+            s += c;
         }
+        randomStringArr[i]=s;
+    }
         return randomStringArr;
     }
 
