@@ -2,6 +2,10 @@ package Sorting;
 
 public class Sorting {
 
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Insertion Sort
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
     public static int[] bubbleSort(int[] arr){
     for(int n=0; n < arr.length-1; n++){
         if (arr[n] > arr[n+1]) {
@@ -10,7 +14,7 @@ public class Sorting {
         }
     }
     return arr;
-}
+    }
 
     public static String[] bubbleSort(String[] arr){
         for(int n=0; n < arr.length-1; n++){
@@ -22,7 +26,11 @@ public class Sorting {
         return arr;
     }
 
-    public static int[] selectionSort(int[] arr){
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Selection Sort
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    public static void selectionSort(int[] arr){
         int lowest = 0;
         for(int i=0; i<arr.length-1;i++){
             lowest = i;
@@ -33,8 +41,11 @@ public class Sorting {
             }
             utility.swap(arr,i,lowest);
         }
-    return arr;
-}
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //Insertion Sort
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     public static void insertionSort(int[] arr){
         for(int i = 1;i<arr.length;i++){
@@ -44,7 +55,7 @@ public class Sorting {
                 }
             }
         }
-}
+    }
 
 
 }

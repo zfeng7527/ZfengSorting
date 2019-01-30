@@ -4,15 +4,16 @@ public class Main {
 
 	//Bubble Sort
 	public static void main(String[] args) {
-		int[] testArr = utility.randomIntArr(10);
+		int[] testArr = utility.randomIntArr(10000);
+		long time;
 
-        int[] ArrCopy = utility.copyArr(testArr);
+       int[] ArrCopy = utility.copyArr(testArr);
 		System.out.print("Before: ");
 		for (int num : ArrCopy)
 			System.out.print(num + " ");
 		System.out.println();
 
-		long time = System.nanoTime();
+		time = System.nanoTime();
 		Sorting.bubbleSort(ArrCopy);
 		time = System.nanoTime() - time;
 
@@ -30,7 +31,7 @@ public class Main {
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		//Selection Sort
 		////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        ArrCopy = utility.copyArr(testArr);
+		ArrCopy = utility.copyArr(testArr);
 		System.out.print("Before: ");
 		for (int num : ArrCopy)
 			System.out.print(num + " ");
